@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    border-radius: 10%;
+    border-color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+form{
+    background-color: rgb(74, 75, 75);
+    color: white;
+    font-size: x-large;
+    border: 0.3ch;
+    border-style: groove solid;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    margin:auto 9cm 1cm;
+}
+.button{
+    background-color: rgba(43, 43, 43, 0.815);
+    color: white;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0.6cm;
+}
+div{
+    margin: 0.6cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color:white
+}
+p{
+    color: white;
+}
+.checkmark {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-bottom: 1cm;
+  }
