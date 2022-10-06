@@ -1,45 +1,19 @@
 body{
     background-color: black;
-    border-radius: 10%;
-    border-color: white;
 }
 h1{
     color: rgb(176, 176, 98);
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-}
-form{
-    background-color: rgb(74, 75, 75);
-    color: white;
-    font-size: x-large;
-    border: 0.3ch;
-    border-style: groove solid;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: fantasy;
     font-size: xx-large;
-    margin:auto 9cm 1cm;
+    letter-spacing: 0.15ch;
 }
-.button{
-    background-color: rgba(43, 43, 43, 0.815);
-    color: white;
-    font-size: larger;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 0.6cm;
+
+
+/* w3schoolssista https://www.w3schools.com/howto/howto_css_image_center.asp */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-div{
-    margin: 0.6cm;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-h2{
-    color:white
-}
-p{
-    color: white;
-}
-.checkmark {
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    margin-bottom: 1cm;
-  }
