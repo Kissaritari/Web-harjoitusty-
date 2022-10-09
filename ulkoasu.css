@@ -32,16 +32,27 @@ a:hover {
 a:active {
     color: darkgoldenrod;
 }
-.tausta {
+.tausta-tausta {
     border: 1ch;
     border-color: rgb(55, 57, 58);
     border-style: double;
     background-color: rgba(75, 70, 70, 0.493);
-    margin-left: 5cm;
-    margin-right: 5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.55cm;
 }
-.vasen_paneeli {
+.banneri {
+    border: 1ch;
+    border-color: rgb(55, 57, 58);
+    border-style: double;
+    background-color: rgba(75, 70, 70, 0.493);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.vasen-paneeli {
+    border: 1ch;
     align-self: flex-end;
     background-color: rgba(75, 70, 70, 0.493);
     margin-right: 85%;
+    border-style: double;
+    background-color: rgba(75, 70, 70, 0.493);
 }
