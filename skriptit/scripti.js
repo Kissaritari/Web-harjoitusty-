@@ -11,14 +11,8 @@ function date() {
 
 function changePic(source) {
     document.getElementById('valittu').src=source;
+    document.getElementById('')
 }
 function changeText() {
-   const statsit = fetch('../media/statsit.json')
-    console.log(statsit)
-
-   /*
-   let nimi = statsit.armorit.armor;
-   let dr = statsit.defenseRating;
-   let dt = statsit.defenseThreshold;
-   document.getElementById('statsit').innerHTML = nimi + "Defense Rating: " + dr + "Defense threshold: " + dt; */
 }
+
