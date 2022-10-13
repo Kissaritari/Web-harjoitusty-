@@ -1,0 +1,12 @@
+{"armorit":[
+    {"armor":"Brotherhood Armor","defenseRating":"40","defenseThreshold":"8"},
+    {"armor":"Combat Armor mk2","defenseRating":"40","defenseThreshold":"6"},
+    {"armor":"combatArmor","defenseRating":"40","defenseThreshold":"5"},
+    {"armor":"leatherArmorMk2","defenseRating":"25","defenseThreshold":"3"},
+    {"armor":"leatherArmor","defenseRating":"20","defenseThreshold":"2"},
+    {"armor":"leatherJacketMk2","defenseRating":"30","defenseThreshold":"2"},
+    {"armor":"metalArmor","defenseRating":"30","defenseThreshold":"4"},
+    {"armor":"metalArmorMk2","defenseRating":"35","defenseThreshold":"4"},
+    {"armor":"teslaArmor","defenseRating":"20","defenseThreshold":"4"},
+    {"armor":"powerArmor","defenseRating":"40","defenseThreshold":"12"}
+]}

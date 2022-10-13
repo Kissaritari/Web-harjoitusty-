@@ -8,7 +8,6 @@ h1{
     font-size: xx-large;
     letter-spacing: 0.15ch;
 }
-
 h2 {
     color: rgb(136, 136, 78);
     font-family: fantasy;
@@ -44,7 +43,6 @@ a:active {
     color: darkgoldenrod;
 }
 .tausta-tausta {
-
     background-color: rgba(75, 70, 70, 0.493);
     margin-left: 180px;
     margin-right: 0.55cm;
@@ -52,7 +50,6 @@ a:active {
     overflow-x: hidden;
 }
 .banneri {
-
     background-color: rgba(75, 70, 70, 0.493);
     margin-left: 15%;
     margin-right: 15%;
@@ -80,4 +77,34 @@ a:active {
 }
 .ruudukko img {
     border: 0.2ch;
+    border-style: inset;
+    border-color: rgb(55, 57, 58);
+    float: left;
+}
+/* myös w3schools */
+.ruudukko img:hover {
+    opacity: 0.4;
+}
+.ruudukko p {
+    float: left;
+    border: 0.2cm;
+    border-color: darkgray;
+    border-style: outset;
+    background-color: bisque;
+    padding: 5px;
+    margin-left: 1ch;
+}
+.valittu {
+    padding: 1cm;
+    float: inline-start;
+    display: flex;
+}
+.valittu img {
+    width: 20%;
+}
+.valittu p {
+    color: rgb(136, 136, 78);
+    margin-left: 30%;
+    margin-right: 50%;
+    float: inline-start;
 }

@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="../tyylit/ulkoasu.css">
         <title>Fallout 2 Armorit</title>
+        <script src="../skriptit/scripti.js"></script>
     </head>
+
     <body>
         <div id="sivupaneeli" class="vasen-paneeli border">
             <h2>Sivut</h2>
@@ -14,25 +16,64 @@
             <a href="url" > teksti<br></a>
             <a href="url" > teksti<br></a>
         </div>
+
         <div id="tausta" class="tausta-tausta border">
 
             <div id="banneri" class="banneri border">
             <h1> Fallout 2 armorit</h1>
             </div>
-            <div> 
-                <img id="valittu" class="center" src="../media/Brotherhood-Armor.PNG">
+
+            <div class="valittu border"> 
+                <img id="valittu" class="border" src="../media/Brotherhood-Armor.PNG" onchange="changeText()">
+                <h2>Stats</h2>
+                <p id="statsit">kissa</p>
             </div>
+
             <div class="ruudukko">
-                <div><img src="../media/Brotherhood-Armor.PNG"> </div>
-                <div><img src="../media/Combat-Armor-mk2.PNG"> </div>
-                <div><img src="../media/Combat-Armor.PNG"> </div>
-                <div><img src="../media/Leather-Armor-mk2.PNG"> </div>
-                <div><img src="../media/Leather-Armor.PNG"> </div>
-                <div><img src="../media/Leather-Jacket-mk2.PNG"> </div>
-                <div><img src="../media/Metal-Armor-mk2.PNG"> </div>
-                <div><img src="../media/Metal-Armor.PNG"> </div>
-                <div><img src="../media/Power-Armor.PNG"> </div>
-                <div><img src="../media/Robe.PNG"> </div>
-                <div><img src="../media/Tesla-Armor.PNG"> </div>
+
+                <div class="border">
+                    <img id="brotherhood-armor" src="../media/Brotherhood-Armor.PNG" onclick="changePic(this.src)"> 
+                    <p id="brotherhood-armor-teksti">Brotherhood Armor</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Combat-Armor-mk2.PNG" onclick="changePic(this.src)""> 
+                    <p id="combat-armor-mk2-teksti">Combat Armor mk2</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Combat-Armor.PNG" onclick="changePic(this.src)">
+                    <p id="combat-armor-teksti">Combat Armor</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Leather-Armor-mk2.PNG" onclick="changePic(this.src)">
+                    <p id="leather-armor-mk2-teksti">Leather Armor mk2</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Leather-Armor.PNG" onclick="changePic(this.src)">
+                    <p id="leather-armor-teksti">Leather Armor</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Leather-Jacket-mk2.PNG" onclick="changePic(this.src)"> 
+                    <p id="leather-jacket-mk2-teksti">Leather Jacket mk2</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Metal-Armor-mk2.PNG" onclick="changePic(this.src)">
+                    <p id="metal-armor-mk2-teksti">Metal Armor mk2</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Metal-Armor.PNG" onclick="changePic(this.src)">
+                    <p id="metal-armor-teksti">Metal Armor</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Power-Armor.PNG" onclick="changePic(this.src)"> 
+                    <p id="power-armor-teksti">Power Armor</p>
+                </div>
+                <div class="border">
+                    <img src="../media/Robe.PNG" onclick="changePic(this.src)"> 
+                    <p id="robe-teksti">Purple robe</p>
+                </div>
+                <div class="border"> 
+                    <img src="../media/Tesla-Armor.PNG" onclick="changePic(this.src)">
+                    <p id="tesla-armor-teksti">Tesla Armor</p>
+                </div>
             </div>
     </body>
