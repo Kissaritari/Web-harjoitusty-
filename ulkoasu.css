@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 h1{
-    color: rgb(176, 176, 98);
+    color: rgb(136, 136, 78);
     text-align: center;
     font-family: fantasy;
     font-size: xx-large;
@@ -10,7 +10,7 @@ h1{
 }
 
 h2 {
-    color: rgb(176, 176, 98);
+    color: rgb(136, 136, 78);
     font-family: fantasy;
 }
 /* w3schoolssista https://www.w3schools.com/howto/howto_css_image_center.asp */
@@ -37,8 +37,10 @@ a:active {
     border-color: rgb(55, 57, 58);
     border-style: double;
     background-color: rgba(75, 70, 70, 0.493);
-    margin-left: 0.5cm;
+    margin-left: 180px;
     margin-right: 0.55cm;
+    margin-top: 0.55cm;
+    overflow-x: hidden;
 }
 .banneri {
     border: 1ch;
@@ -49,10 +51,24 @@ a:active {
     margin-right: 15%;
 }
 .vasen-paneeli {
+    padding: 6px 80px 6px 16px;
     border: 1ch;
-    align-self: flex-end;
+    height: 100%;
+    position: fixed;
     background-color: rgba(75, 70, 70, 0.493);
-    margin-right: 85%;
     border-style: double;
     background-color: rgba(75, 70, 70, 0.493);
+    overflow-x: hidden;
+    z-index: 1;
+    top: 0.9;
+    left: 0;
+}
+.vasen-paneeli a {
+    font-size: 3ch;
+}
+/* https://www.w3schools.com/css/css_grid.asp */
+.ruudukko {
+    display: grid;
+    grid-template-columns: auto auto auto;
+ 
 }
