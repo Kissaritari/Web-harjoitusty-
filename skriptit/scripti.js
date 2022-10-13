@@ -11,6 +11,7 @@ function date() {
 function changePic(source,armorid) {
     document.getElementById('valittu').src=source;
     changeText(armorid);
+    localStorage.setItem('current-picture',source);
 }
  /*https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch*/
 
@@ -30,20 +31,31 @@ function changeText(armorid) {
     let statsit = {"armorit":[
         {"armorid":"0","armor":"Brotherhood Armor","damageResistance":"40","damageThreshold":"8","id":"brotherhood-armor-teksti" },
         {"armorid":"1","armor":"Combat Armor mk2","damageResistance":"40","damageThreshold":"6","id":"combat-armor-mk2-teksti"},
-        {"armorid":"2","armor":"combatArmor","damageResistance":"40","damageThreshold":"5","id":"combat-armor-teksti"},
-        {"armorid":"3","armor":"leatherArmorMk2","damageResistance":"25","damageThreshold":"3","id":"leather-armor-mk2-teksti"},
-        {"armorid":"4","armor":"leatherArmor","damageResistance":"20","damageThreshold":"2","id":"leather-armor-teksti"},
-        {"armorid":"5","armor":"leatherJacketMk2","damageResistance":"30","damageThreshold":"2","id":"leather-jacket-mk2-teksti"},
-        {"armorid":"6","armor":"metalArmor","damageResistance":"30","damageThreshold":"4","id":"metal-armor-teksti"},
-        {"armorid":"7","armor":"metalArmorMk2","damageResistance":"35","damageThreshold":"4","id":"metal-armor-mk2-teksti"},
-        {"armorid":"8","armor":"teslaArmor","damageResistance":"20","damageThreshold":"4","id":"tesla-armor-teksti"},
-        {"armorid":"9","armor":"powerArmor","damageResistance":"40","damageThreshold":"12","id":"power-armor-teksti"},
+        {"armorid":"2","armor":"combat Armor","damageResistance":"40","damageThreshold":"5","id":"combat-armor-teksti"},
+        {"armorid":"3","armor":"leather Armor Mk2","damageResistance":"25","damageThreshold":"3","id":"leather-armor-mk2-teksti"},
+        {"armorid":"4","armor":"leather Armor","damageResistance":"20","damageThreshold":"2","id":"leather-armor-teksti"},
+        {"armorid":"5","armor":"leather Jacket Mk2","damageResistance":"30","damageThreshold":"2","id":"leather-jacket-mk2-teksti"},
+        {"armorid":"6","armor":"metal Armor","damageResistance":"30","damageThreshold":"4","id":"metal-armor-teksti"},
+        {"armorid":"7","armor":"metal Armor Mk2","damageResistance":"35","damageThreshold":"4","id":"metal-armor-mk2-teksti"},
+        {"armorid":"8","armor":"tesla Armor","damageResistance":"20","damageThreshold":"4","id":"tesla-armor-teksti"},
+        {"armorid":"9","armor":"power Armor","damageResistance":"40","damageThreshold":"12","id":"power-armor-teksti"},
         {"armorid":"10","armor":"robe","damageResistance":"20","damageThreshold":"0","id":"robe-teksti"}
     ]}
     // ei myöskään onnistu millää lukea täältä jsonista -.-
     console.log(statsit)
-    let name = statsit.armor;
-    let dr = statsit.damageResistance;
-    let dt = statsit.damageThreshold;
-    document.getElementById('statsit').innerHTML = name + "<br>Damage resistance: " + dr + " Damage threshold" + dt ;
+    let name = statsit['armorit'][armorid]["armor"];
+    let dr = statsit['armorit'][armorid]["damageResistance"];
+    let dt = statsit['armorit'][armorid]["damageThreshold"];
+    document.getElementById('statsit').innerHTML = name + "<br>Damage resistance: " + dr + " Damage threshold: " + dt ;
+    saveSelection(armorid);
+    }
+
+    function saveSelection(armorid) {
+        localStorage.setItem('current-armor',armorid);
+    }
+    function loadSelection() {
+        if (localStorage.getItem('current-armor') != null) {
+            changeText(localStorage.getItem('current-armor'));
+            document.getElementById('valittu').src=localStorage.getItem('current-picture');
+        }
     }
