@@ -18,6 +18,10 @@ h3 {
     font-size: medium;
     padding-left: 5%;
 }
+p {
+    color: rgb(136, 136, 78);
+    font-family: fantasy;
+}
 /* w3schoolssista https://www.w3schools.com/howto/howto_css_image_center.asp */
 .center {
     display: block;
@@ -44,7 +48,7 @@ a:active {
 }
 .tausta-tausta {
     background-color: rgba(75, 70, 70, 0.493);
-    margin-left: 180px;
+    margin-left: 185px;
     margin-right: 0.55cm;
     margin-top: 0.55cm;
     overflow-x: hidden;
@@ -55,10 +59,8 @@ a:active {
     margin-right: 15%;
 }
 .vasen-paneeli {
-    padding: 6px 80px 6px 16px;
     height: 100%;
     position: fixed;
-    background-color: rgba(75, 70, 70, 0.493);
     background-color: rgba(75, 70, 70, 0.493);
     overflow-x: hidden;
     z-index: 1;
@@ -100,7 +102,9 @@ a:active {
     display: flex;
 }
 .valittu img {
-    width: 20%;
+    width: 7cm;
+    height: auto;
+    
 }
 .valittu p {
     color: rgb(136, 136, 78);
@@ -108,3 +112,13 @@ a:active {
     margin-right: 50%;
     float: inline-start;
 }
+.galleria {
+    display: grid;
+}
+.galleria img {
+    margin: 00.2ch;
+    border: 0.7ch;
+    border-color: darkslategray;
+    border-style: solid;
+}
+

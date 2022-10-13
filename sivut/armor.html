@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../tyylit/ulkoasu.css">
         <title>Fallout 2 Armorit</title>
         <script src="../skriptit/scripti.js"></script>
+        <script src="../media/statsit.json"></script>
     </head>
 
     <body>
@@ -13,7 +14,7 @@
             <a href="https://kissaritari.github.io/kissa" > Etusivu<br></a>
             <a href="https://kissaritari.github.io/kissa/sivut/armor" > Armorit<br> </a>
             <a href="https://kissaritari.github.io/kissa/sivut/gallery" > Galleria<br></a>
-            <a href="url" > teksti<br></a>
+            <a href="https://fallout.fandom.com/wiki/Fallout_2" > Epävirallinen Wiki<br></a>
             <a href="url" > teksti<br></a>
         </div>
 
@@ -24,7 +25,7 @@
             </div>
 
             <div class="valittu border"> 
-                <img id="valittu" class="border" src="../media/Brotherhood-Armor.PNG">
+                <img id="valittu" class="border" src="../media/Brotherhood-Armor.PNG" alt="Brotherhood armor">
                 <h2>Stats</h2>
                 <p id="statsit">kissa</p>
             </div>
@@ -32,47 +33,47 @@
             <div class="ruudukko">
 
                 <div class="border">
-                    <img id="brotherhood-armor" src="../media/Brotherhood-Armor.PNG" onclick="changePic(this.src)"> 
+                    <img id="0" src="../media/Brotherhood-Armor.PNG" onclick="changePic(this.src,this.id)" alt="Brotherhood armor"> 
                     <p id="brotherhood-armor-teksti">Brotherhood Armor</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Combat-Armor-mk2.PNG" onclick="changePic(this.src)""> 
+                    <img id="1" src="../media/Combat-Armor-mk2.PNG" onclick="changePic(this.src,this.id)" alt="Combat armor mk2"> 
                     <p id="combat-armor-mk2-teksti">Combat Armor mk2</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Combat-Armor.PNG" onclick="changePic(this.src)">
+                    <img id="2" src="../media/Combat-Armor.PNG" onclick="changePic(this.src,this.id)" alt="Combat armor">
                     <p id="combat-armor-teksti">Combat Armor</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Leather-Armor-mk2.PNG" onclick="changePic(this.src)">
+                    <img id="3" src="../media/Leather-Armor-mk2.PNG" onclick="changePic(this.src,this.id)" alt="Leather armor mk2">
                     <p id="leather-armor-mk2-teksti">Leather Armor mk2</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Leather-Armor.PNG" onclick="changePic(this.src)">
+                    <img id="4" src="../media/Leather-Armor.PNG" onclick="changePic(this.src,this.id)" alt="Leather armor">
                     <p id="leather-armor-teksti">Leather Armor</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Leather-Jacket-mk2.PNG" onclick="changePic(this.src)"> 
+                    <img id="5" src="../media/Leather-Jacket-mk2.PNG" onclick="changePic(this.src,this.id)" alt="Leather jacket mk2"> 
                     <p id="leather-jacket-mk2-teksti">Leather Jacket mk2</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Metal-Armor-mk2.PNG" onclick="changePic(this.src)">
+                    <img id="7" src="../media/Metal-Armor-mk2.PNG" onclick="changePic(this.src,this.id)" alt="Metal armor mk2">
                     <p id="metal-armor-mk2-teksti">Metal Armor mk2</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Metal-Armor.PNG" onclick="changePic(this.src)">
+                    <img id="6" src="../media/Metal-Armor.PNG" onclick="changePic(this.src,this.id)" alt="Metal armor">
                     <p id="metal-armor-teksti">Metal Armor</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Power-Armor.PNG" onclick="changePic(this.src)"> 
+                    <img id="9" src="../media/Power-Armor.PNG" onclick="changePic(this.src,this.id)" alt="Power armor"> 
                     <p id="power-armor-teksti">Power Armor</p>
                 </div>
                 <div class="border">
-                    <img src="../media/Robe.PNG" onclick="changePic(this.src)"> 
+                    <img id="10" src="../media/Robe.PNG" onclick="changePic(this.src,this.id)" alt="Robe" > 
                     <p id="robe-teksti">Purple robe</p>
                 </div>
                 <div class="border"> 
-                    <img src="../media/Tesla-Armor.PNG" onclick="changePic(this.src)">
+                    <img id="8" src="../media/Tesla-Armor.PNG" onclick="changePic(this.src,this.id)" alt="Tesla armor">
                     <p id="tesla-armor-teksti">Tesla Armor</p>
                 </div>
             </div>
