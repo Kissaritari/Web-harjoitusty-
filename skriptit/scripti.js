@@ -14,5 +14,8 @@ function changePic(source) {
     document.getElementById('')
 }
 function changeText() {
+    const json = ('../media/statsit.json');
+    const dict = JSON.parse(json);
+    let name = dict.armorit.armor;
 }
 
