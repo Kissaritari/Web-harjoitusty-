@@ -26,6 +26,11 @@ h3 {
     margin-right: auto;
     width: 50%;
 }
+.border {
+    border: 1ch;
+    border-color: rgb(55, 57, 58);
+    border-style: double;
+}
 a:link {
     color: bisque;
 }
@@ -39,9 +44,7 @@ a:active {
     color: darkgoldenrod;
 }
 .tausta-tausta {
-    border: 1ch;
-    border-color: rgb(55, 57, 58);
-    border-style: double;
+
     background-color: rgba(75, 70, 70, 0.493);
     margin-left: 180px;
     margin-right: 0.55cm;
@@ -49,20 +52,16 @@ a:active {
     overflow-x: hidden;
 }
 .banneri {
-    border: 1ch;
-    border-color: rgb(55, 57, 58);
-    border-style: double;
+
     background-color: rgba(75, 70, 70, 0.493);
     margin-left: 15%;
     margin-right: 15%;
 }
 .vasen-paneeli {
     padding: 6px 80px 6px 16px;
-    border: 1ch;
     height: 100%;
     position: fixed;
     background-color: rgba(75, 70, 70, 0.493);
-    border-style: double;
     background-color: rgba(75, 70, 70, 0.493);
     overflow-x: hidden;
     z-index: 1;
@@ -74,7 +73,11 @@ a:active {
 }
 /* https://www.w3schools.com/css/css_grid.asp */
 .ruudukko {
+    border: 0.5cm;
+    border-style: double;
     display: grid;
     grid-template-columns: auto auto auto;
- 
+}
+.ruudukko img {
+    border: 0.2ch;
 }
