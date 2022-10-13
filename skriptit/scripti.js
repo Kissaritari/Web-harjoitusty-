@@ -1,17 +1,16 @@
 "use strict";
-
 function date() {
     let date = new Date();
     let paiva = date.getDate();
     let kk = date.getMonth();
     let vuosi = date.getFullYear();
-    let pvm = ("Tänään on " + paiva + "." + kk + "." + vuosi);
-    document.getElementById('pvm').innerHTML = pvm;
+    let pvm = ( "Tänään on " + paiva + "." + kk + "." + vuosi );
+    document.getElementById( 'pvm' ).innerHTML = pvm;
 }
 function changePic(source,armorid) {
-    document.getElementById('valittu').src=source;
+    document.getElementById( 'valittu' ).src=source;
     changeText(armorid);
-    localStorage.setItem('current-picture',source);
+    localStorage.setItem( 'current-picture',source );
 }
  /*https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch*/
 
@@ -20,12 +19,11 @@ function changePic(source,armorid) {
     console.log(json)
     const dict = JSON.parse(json);
     if (data[0]['armorid'] == armorid) {
-        let name = dict[0]['armor'];
-        let dr = dict[0]['damageResistance'];
-        let dt = dict[0]['damageThreshold'];
+        let name = statsit['armorit'][armorid]["armor"];
+        let dr = statsit['armorit'][armorid]["damageResistance"];
+        let dt = statsit['armorit'][armorid]["damageThreshold"];
         document.getElementById('statsit').innerHTML = name + "Damage resistance: " + dr + " Damage threshold" + dt ;
         */
-
 function changeText(armorid) {
     /* en saanu millää tuota jsonia toimimaan ulkoisesta tiedostosta : () */
     let statsit = {"armorit":[
@@ -42,19 +40,17 @@ function changeText(armorid) {
         {"armorid":"10","armor":"robe","damageResistance":"20","damageThreshold":"0","id":"robe-teksti"}
     ]}
     // ei myöskään onnistu millää lukea täältä jsonista -.-
-    console.log(statsit)
-    let name = statsit['armorit'][armorid]["armor"];
-    let dr = statsit['armorit'][armorid]["damageResistance"];
-    let dt = statsit['armorit'][armorid]["damageThreshold"];
-    document.getElementById('statsit').innerHTML = name + "<br>Damage resistance: " + dr + " Damage threshold: " + dt ;
+    let name = statsit[ 'armorit' ][ armorid ][ "armor" ];
+    let dr = statsit[ 'armorit' ][ armorid ][ "damageResistance" ];
+    let dt = statsit[ 'armorit' ][ armorid ][ "damageThreshold" ];
+    document.getElementById('statsit').innerHTML = name + "<br>Damage resistance: " + dr + " Damage threshold: " + dt;
     saveSelection(armorid);
     }
-
     function saveSelection(armorid) {
         localStorage.setItem('current-armor',armorid);
     }
     function loadSelection() {
-        if (localStorage.getItem('current-armor') != null) {
+        if ( localStorage.getItem('current-armor') != null ) {
             changeText(localStorage.getItem('current-armor'));
             document.getElementById('valittu').src=localStorage.getItem('current-picture');
         }
