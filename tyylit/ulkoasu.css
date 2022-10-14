@@ -104,6 +104,7 @@ a:active {
 .valittu img {
     width: 7cm;
     height: auto;
+    min-width: 7cm;
     
 }
 .valittu p {
