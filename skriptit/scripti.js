@@ -2,7 +2,7 @@
 function date() {
     let date = new Date();
     let paiva = date.getDate();
-    let kk = date.getMonth();
+    let kk = date.getMonth() + 1;
     let vuosi = date.getFullYear();
     let pvm = ( "Tänään on " + paiva + "." + kk + "." + vuosi );
     document.getElementById( 'pvm' ).innerHTML = pvm;
@@ -38,8 +38,7 @@ function changeText(armorid) {
         {"armorid":"8","armor":"tesla Armor","damageResistance":"20","damageThreshold":"4","id":"tesla-armor-teksti"},
         {"armorid":"9","armor":"power Armor","damageResistance":"40","damageThreshold":"12","id":"power-armor-teksti"},
         {"armorid":"10","armor":"robe","damageResistance":"20","damageThreshold":"0","id":"robe-teksti"}
-    ]}
-    // ei myöskään onnistu millää lukea täältä jsonista -.-
+    ]};
     let name = statsit[ 'armorit' ][ armorid ][ "armor" ];
     let dr = statsit[ 'armorit' ][ armorid ][ "damageResistance" ];
     let dt = statsit[ 'armorit' ][ armorid ][ "damageThreshold" ];
