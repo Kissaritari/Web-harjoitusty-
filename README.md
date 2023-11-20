@@ -1,5 +1,4 @@
-# kissa
-web ohjelmoinnin harjoitustyö
+# web ohjelmoinnin harjoitustyö
 
 Saku Ylimäki
 
